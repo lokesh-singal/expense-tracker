@@ -1,0 +1,164 @@
+* {
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background: #1e1e1e;
+    color: #171717;
+}
+
+section {
+    margin: 4rem 0;
+}
+
+.outer {
+    background-color: #fff;
+    color: #171717;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inner css */
+.inner {
+    width: 37vw;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    /* border-radius: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.income-balance {
+    color: #139513;
+}
+
+.expense-balance {
+    color: #ff0000d1;
+}
+
+.income-balance,
+.expense-balance {
+    padding-top: 2px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* form css */
+form {
+    margin-top: 10px;
+}
+
+input {
+    width: 15rem;
+    display: block;
+    margin: 15px 10px;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+
+/* buttons css */
+.buttons {
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.income-btn {
+    background-color: #65d765a6;
+}
+
+.expense-btn {
+    background-color: #ff00008f;
+}
+
+.income-btn,
+.expense-btn {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+}
+
+.income-btn:hover,
+.expense-btn:hover {
+    transform: scale(1.1)
+}
+
+/* transactions css */
+.transactions {
+    display: block;
+    width: 90%;
+    padding: 0 0 10px 20px;
+}
+
+h2 {
+    text-align: left;
+}
+
+.list {
+    margin: 10px 0;
+}
+
+.income {
+    color: #139513;
+}
+
+.expense {
+    color: #ff0000d1
+}
+
+@media screen and (max-width: 600px) {
+    .outer {
+        width: 85vw;
+    }
+
+    .inner {
+        width: 77vw;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .outer {
+        width: 75vw;
+    }
+
+    .inner {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .outer {
+        width: 65vw;
+    }
+
+    .inner {
+        width: 60vw;
+    }
+
+}
+
+@media only screen and (min-width: 959px) and (max-width: 1200px) {
+    .outer {
+        width: 55vw;
+    }
+
+    .inner {
+        width: 50vw;
+    }
+}

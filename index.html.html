@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-tracker</title>
+    <link rel="stylesheet" href="Expense-tracker.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="outer">
+            <h1>Main balance : <span class="main-balance">0</span></h1>
+            <div class="inner">
+                <div class="balance-income">
+                    <p>Income</p>
+                    <p class="income-balance">0</p>
+                </div>
+                <div class="balance-expense">
+                    <p>Expence</p>
+                    <p class="expense-balance">0</p>
+                </div>
+            </div>
+            <form>
+                <input type="number" id="amount" placeholder="amount">
+                <input type="text" id="details" placeholder="details">
+                <div class="buttons">
+                    <button class="income-btn">income</button>
+                    <button class="expense-btn">expense</button>
+                </div>
+            </form>
+            <h2>transactions</h2>
+            <div class="transactions"></div>
+        </div>
+    </section>
+
+    <script src="Expense-tracker.js"></script>
+</body>
+
+</html>
